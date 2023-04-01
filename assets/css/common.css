@@ -1,0 +1,65 @@
+/* 공용소스 */
+
+body{
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+
+  min-width: 1190px;
+  
+}
+strong{
+  font-weight: bold;
+}
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.header .logo a, 
+.header .search-area .btn-submit::after,
+.header .service-area a::after,
+.gnb .nav-area .nav-item .ic-mail::before,
+.sc-news .group-issue .issue-area .link-media::after,
+.sc-news .group-title .set-area .btn-set::after, .sc-login .link-login::before, .sc-sidenews .nav-wrap .btn-nav::after,
+.sc-login .sub-area .link-id::before, .sc-login .sub-area .link-join::before, .sc-news .group-media .prev-btn::before, .group-title .title-right .set::before, .group-media .media-list1 ul li a .playbtn::after, .media-list3 .media-wrap-link .media-thumb .playbtn::after, .media-list5 .media-list5-title a::after, .media-list5 .contents-wrap .btn::after, .more-group-btn .btn-more::before, .footer .footer-inner .notice-sec .service-all-link::after, .sc-shop .shop-header .link-shop-title a::after, .sc-shop .shop-header .link-shop-title a::before, .shop-goods-list-wrap .shop-controls .btn-box .prevbtn::before,
+.gnb .nav-area .nav-item .shopping-live::before, .gnb .nav-area .nav-item .tv::before, .shop-contents-wrap .shop-page-control .pager::before, .sc-news .group-newsstand .prev-btn::before, .group-media .media-list  .media-item .main-media .playbtn::after,
+.sc-news .group-title .link-title::before, .sc-news .group-title .link-title::after,
+.gnb .nav-area .btn-more::after,
+.gnb .weather-area .temperature-box .max::before
+{
+  background-image: url(../img/sp-bg.png);
+  background-size: 442px;
+  background-repeat: no-repeat;
+}
+.sc-shop .shop-header .link-shop-title a::before, .sc-shop .shop-header .link-shop-title a::after, .shop-goods-list-wrap .shop-controls .btn-box .prevbtn::before, .shop-goods-list-wrap .shop-controls .btn-box .nextbtn::before, .shop-contents-wrap .shop-page-control .prevbtn::before, .shop-contents-wrap .shop-page-control .nextbtn::before,
+.shop-controls .btn-box .prevbtn::before,.shop-controls .btn-box .nextbtn::before, .shop-plus-deal .plus-deal-title .title a::before,
+.shop-contents-wrap .deal-area .thumb-box:nth-child(2)::before, .shop-contents-wrap .deal-area .thumb-box:first-child .plus-icon::before
+{
+  background-image: url(../img/sprite_2.png);
+  background-size: 129px;
+  background-repeat: no-repeat;
+}
+
+.gnb .weather-area .link-weather::before{
+  background-image: url(../img/weather_sprite.png);
+  background-size: 215px;
+  background-repeat: no-repeat;
+} 
+.thumb-box{
+  position: relative;
+}
+.thumb-box::after{
+  position: absolute;
+  content: '';
+  top: 0;left: 0;right: 0;bottom: 0;
+  border: 1px solid #000;
+  opacity: 0.1;
+  background: #f00;
+}
+

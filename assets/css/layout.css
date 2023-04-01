@@ -1,0 +1,479 @@
+@import './reset.css';
+@import './common.css';
+
+
+/* 헤더 */
+
+.header{
+
+}
+.header .group-header{
+  width: 1130px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+.header .logo{
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -32px;
+}
+.header .logo a{
+  width: 222px;
+  height: 52px;
+  display: block;
+  background-position: 0 -158px;
+}
+
+.header .search-area{
+  position: absolute;
+  top: 50%;
+  left: 238px;
+  margin-top: -28px;
+}
+.header .search-area .inner{
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+}
+.header .search-area .input-text{
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0;
+}
+
+.header .search-area .btn-submit{
+  position: absolute;
+  width: 56px;
+  background: #19ce60;
+  height: 56px;
+  top: -2px;
+  right: 0;
+}
+
+.header .search-area .btn-submit::after{
+  content: '';
+
+  height: 22px;
+  width: 22px;
+
+  display: inline-block;
+  vertical-align: top;
+  /* 여백없애기!! */
+  background-position: -420px -24px;
+}
+
+.header .service-area{
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 3px;
+}
+
+.header .service-area .bar{
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+  margin: 3px 10px;
+}
+
+.header .service-area .link-start::after{
+
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-position: -382px -213px;
+
+  vertical-align: top;
+  content: '';
+  margin: -3px 0 0 3px;
+  /* 끝지점 맞춰주깅 */
+}
+.header .service-area .link-junior::after{
+  content: '';
+  display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -264px -296px;
+  
+    vertical-align: top;
+    margin: 3px;
+}
+.header .service-area .link-bin::after{
+  content: '';
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  background-position: -365px -245px;
+
+  vertical-align: top;
+  margin: 3px 3px 2px;
+}
+
+
+.gnb{
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+  border-top: 1px solid #e4e8eb;
+}
+.gnb .gnb-inner{
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.gnb .nav-area{
+  padding: 11px 0;
+  display: flex;
+}
+.gnb .nav-area .nav-list{
+  display: flex;
+  gap: 12px;
+}
+.gnb .nav-area .nav-item{}
+.gnb .nav-area .nav-item + .nav-item{}
+.gnb .nav-area .nav-item > a{
+  font-size: 15px;
+  font-weight: bold;
+  color: #19ce60;
+  line-height: 30px;
+  display: block;
+}
+.gnb .nav-area .nav-item .ic-mail::before{
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-position: -420px -73px;
+
+  vertical-align: top;
+  margin: 3px 9px 0 0;
+}
+.gnb .nav-area .nav-item .shopping-live{
+  padding: 5px 0;
+}
+.gnb .nav-area .nav-item .shopping-live::before{
+
+  width: 54px;
+    height: 20px;
+    background-position: -209px -267px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    display: block;
+  
+}
+
+.gnb .nav-area .nav-item .tv::before{
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background-position: -256px -212px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 9px 2px 0 0;
+  content: '';
+}
+
+.gnb .nav-area .nav-right-list{
+  margin-left: 12px;
+  display: flex;
+  gap: 12px;
+}
+.gnb .nav-area .nav-right-list .nav-item > a{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -.3px;
+}
+
+.gnb .nav-area .btn-more{
+
+  margin-left: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #202020;
+  text-align: right;
+}
+.gnb .nav-area .btn-more::after{
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  background-position: -402px -296px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: '';
+  margin-left: 4px;
+  vertical-align: 2px;
+}
+.gnb .weather-area{}
+.gnb .weather-area .link-weather{
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    padding: 12px 0 11px;
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.gnb .weather-area .link-weather::before{
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  background-position: -31px 0;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: '';
+}
+
+.gnb .weather-area .current-box{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.gnb .weather-area .current{
+  font-size: 15px;
+}
+.gnb .weather-area .state{}
+
+.gnb .weather-area .temperature-box{
+  margin-left: 9px;
+}
+.gnb .weather-area .temperature-box .min{color: #2586ee;}
+.gnb .weather-area .temperature-box .max{color: #e9564a;}
+.gnb .weather-area .temperature-box .max::before{
+    display: inline-block;
+    width: 5px;
+    height: 11px;
+    background-position: -437px -182px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 0 3px 0 1px;
+    vertical-align: -1px;
+}
+.gnb .weather-area .location-box{
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  padding-left: 9px;
+  font-size: 12px;
+  color: grey;
+  text-align: right;
+
+}
+
+
+
+
+/* 푸터 */
+
+.footer{
+  background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb
+}
+.footer .footer-inner{
+  width: 1130px;
+    padding: 0 30px 92px;
+    margin: 0 auto;
+}
+
+.footer .footer-inner .footer-ad{
+  overflow: hidden;
+    padding: 24px 0;
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.footer .footer-inner .footer-ad ul{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-inner .footer-ad ul li{
+  display: flex;
+  width: 350px;
+  height: 86px;
+
+}
+.footer .footer-inner .footer-ad ul li .ad-info{
+
+  overflow: hidden;
+  padding: 2px 2px 0 16px;
+  font-size: 12px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  text-align: left;
+
+}
+.footer .footer-inner .footer-ad ul li .ad-info em{
+  display: block;
+  overflow: hidden;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  color: #58c464;
+  white-space: nowrap;
+}
+.footer .footer-inner .footer-ad ul li .ad-info .title{
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.26px;
+  color: #242424;
+  white-space: nowrap;
+}
+.footer .footer-inner .footer-ad ul li .ad-info .desc{
+  overflow: hidden;
+  line-height: 18px;
+  letter-spacing: -0.25px;
+  color: #424242;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.footer .footer-inner .footer-ad ul li .img-border{
+    overflow: hidden;
+    position: relative;
+    width: 160px;
+    height: 86px;
+}
+.footer .footer-inner .footer-ad ul li .img-border::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  content: '';
+}
+
+.footer .footer-inner .notice-sec{
+  overflow: hidden;
+  padding: 16px 0 15px;
+  border-bottom: 1px solid #e4e8eb;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-inner .notice-sec .title{
+
+}
+.footer .footer-inner .notice-sec .service-all-link{
+  font-weight: 700;
+  color: #202020;
+}
+.footer .footer-inner .notice-sec .service-all-link::after{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: -408px -110px;
+    vertical-align: top;
+    content: '';
+    margin-left: 10px;
+    vertical-align: -2px;
+}
+
+.footer .footer-inner .aside-sec{
+  display: flex;
+  border-bottom: 1px solid #e4e8eb;
+
+}
+.footer .footer-inner .aside-sec .partner-box-wrap{
+  width: 780px;
+  padding: 20px 0;
+}
+.footer .footer-inner .aside-sec .partner-box-wrap .partner-box{
+  display: flex;
+  align-items: baseline;
+}
+.footer .footer-inner .aside-sec .partner-box-wrap .partner-box:not(:first-child){
+  margin-top: 9px;
+}
+.footer .footer-inner .aside-sec .partner-box-wrap .partner-box > a{
+  color: #777;
+}
+.footer .footer-inner .aside-sec .partner-box-wrap .partner-box > a:not(:nth-child(2))::before{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+.footer .footer-inner .aside-sec .partner-box-wrap .partner-box .title{
+  width: 87px;
+}
+
+.footer .footer-inner .aside-sec .service-box-wrap{
+  width: 350px;
+  padding: 28px 0;
+  display: flex;
+
+}
+
+.footer .footer-inner .aside-sec .service-box-wrap .service-box{
+  display: flex;
+}
+
+.footer .footer-inner .aside-sec .service-box-wrap .service-box .service-info a{
+  color: gray;
+  margin-top: 4px;
+}
+.footer .footer-inner .aside-sec .service-box-wrap .service-box .service-icon{
+  margin-left: 12px;
+}
+.footer .footer-inner .aside-sec .service-box-wrap .service-box img{
+  width: 48px;
+aspect-ratio: auto 48 / 48;
+height: 48px;
+}
+
+.footer .footer-inner .aside-sec .service-box-wrap .service-box:last-child{
+  margin-left: 50px;
+}
+
+.footer .footer-inner .corp-sec{
+  padding-top: 25px;
+}
+.footer .footer-inner .corp-sec .list-corp{
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+}
+.footer .footer-inner .corp-sec .list-corp .corp-item{
+  float: left;
+    color: #777;
+}
+.footer .footer-inner .corp-sec .list-corp .corp-item:not(:first-child)::before{
+  content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+}
+.footer .footer-inner .corp-sec .addr{
+  float: left;
+  color: #202020;
+  font-weight: 700;
+}
